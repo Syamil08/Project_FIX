@@ -24,6 +24,7 @@ class Disaster extends CI_Controller
 
 		$this->load->view('disaster/index',$data);
 	}
+	
 
 	public function about()
 	{
