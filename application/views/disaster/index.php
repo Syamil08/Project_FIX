@@ -36,7 +36,7 @@
 		          </a>
 		          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
 		            <a href="#" class="dropdown-item"><?php echo $login->username?></a>
-		            <a href="#" class="dropdown-item">Dashboard</a>
+		            <a href="<?php echo site_url('donatur/index')?>" class="dropdown-item">Dashboard</a>
 		            <div class="dropdown-divider"></div>
 		            <a href="<?php echo site_url('user/logout')?>" class="dropdown-item">Logout</a>
 		          </div>

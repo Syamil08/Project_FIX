@@ -1,13 +1,25 @@
 <?php
 
 
-class ClassName extends AnotherClass
+class Donatur extends CI_Controller
 {
 	
-	function __construct(argument)
+	public function __construct()
 	{
-		# code...
+		parent::__construct();
+		$this->load->library('form_validation');
 	}
+
+	public function index()
+	{
+		$login = $this->session->userdata('logged_in');
+
+		$data['login'] = $login;
+
+		$this->template_donatur->show('donatur/index',$data);
+	}
+
+
 }
 
 ?>
