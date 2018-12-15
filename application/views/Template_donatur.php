@@ -23,7 +23,7 @@
 	<!-- Navbar -->
   <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar bg-dark static-top">
     
-    <a href="dashboard_donatur_profile.html" class="navbar-brand mr-0 mr-md-2">Donatur</a>
+    <a href="#" class="navbar-brand mr-0 mr-md-2">Donatur</a>
     
     
     <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
@@ -53,16 +53,23 @@
       </div> 
 
       <li class="nav-item">
-        <a href="dashboard_donatur_profile.html" class="nav-link">
+        <a href="<?php echo site_url('donatur/index')?>" class="nav-link">
           <i class="fa fa-fw fa-user"></i>
           <span>My Profile</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a href="dashboard_donatur_riwayatDonasi.html" class="nav-link">
+        <a href="<?php echo site_url('donatur/riwayat')?>" class="nav-link">
           <i class="fa fa-fw fa-table"></i>
           <span>Riwayat Donasi</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="<?php echo site_url('disaster/index')?>" class="nav-link">
+          <i class="fa fa-fw fa-table"></i>
+          <span>Kembali Ke beranda</span>
         </a>
       </li>
 

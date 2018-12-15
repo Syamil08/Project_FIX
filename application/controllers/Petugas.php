@@ -45,13 +45,13 @@ class Petugas extends CI_Controller
 
 		$this->load->model('m_user');
 
-		$column_petugas 	= $this->m_user->get_column_petugas();
+		$column_petugas = $this->m_user->get_column_petugas();
 
-		$data['penulis']	= $column_petugas;
+		$data['penulis']= $column_petugas;
 
-		$berita 			= $this->m_category->get_all();
+		$berita = $this->m_category->get_all();
 
-		$data['berita'] 	= $berita;
+		$data['berita'] = $berita;
 
 		$this->template_petugas->show('petugas/tambah_berita',$data);
 

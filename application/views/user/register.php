@@ -41,6 +41,14 @@
 		<form action="<?php echo site_url('user/save')?>" method="post" class="form-signin">
 			<div class="row">
 				<div class="col-md-6 mb-3 form-group">
+					<label for="Username" class="sr-only">Firstname</label>
+					<input type="text" name="firstname" class="form-control" placeholder="Firstname" required autofocus>
+				</div>
+				<div class="col-md-6 mb-3 form-group">
+					<label for="Username" class="sr-only">Lastname</label>
+					<input type="text" name="lastname" class="form-control" placeholder="Lastname" required autofocus>
+				</div>
+				<div class="col-md-6 mb-3 form-group">
 					<label for="Username" class="sr-only">Username</label>
 					<input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
 				</div>

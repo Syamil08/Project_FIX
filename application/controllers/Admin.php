@@ -9,9 +9,7 @@ class Admin extends CI_Controller
 		parent::__construct();
 		$this->load->library('form_validation');
 
-		$login = $this->session->userdata('logged_in');
-
-		if(!$login){
+		if(!userdata()){
 			redirect('user/verify');	
 		}
 	}
@@ -104,12 +102,15 @@ class Admin extends CI_Controller
 		$data 	= [
 			'name'		=> $firstname." ".$lastname,
 			'username'	=> $username,
-			'password'	=> md5($newpassword),
 			'role'		=> $role,
 			'status' 	=> $status,
 			'phone' 	=> $nohp,
 			'address' 	=> $alamat
 		];
+
+		if (!empty($newpassword)) {
+			$data['password'] = md5($newpassword);
+		}
 
 		$save	= $this->m_user->update($data,$id);
 
