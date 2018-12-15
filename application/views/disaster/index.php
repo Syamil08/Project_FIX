@@ -29,14 +29,14 @@
 		      <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
 		      <a class="nav-item nav-link" href="#">Donasi</a>
 		      <a class="nav-item nav-link" href="<?php echo site_url('disaster/about')?>">About</a>
-			<?php if ($this->session->userdata('logged_in')): ?>
+			<?php if (userdata()): ?>
 				<li class="nav-item dropdown no-arrow">
 		          <a href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-roggle">
 		            <i class="fa fa-user-circle fa-fw"></i>
 		          </a>
 		          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-		            <a href="#" class="dropdown-item"><?php echo $login->username?></a>
-		            <a href="#" class="dropdown-item">Dashboard</a>
+		            <a href="#" class="dropdown-item"><?php echo userdata()->username?></a>
+		            <a href="<?php echo site_url('donatur/index')?>" class="dropdown-item">Dashboard</a>
 		            <div class="dropdown-divider"></div>
 		            <a href="<?php echo site_url('user/logout')?>" class="dropdown-item">Logout</a>
 		          </div>
@@ -60,21 +60,21 @@
 	  </ol>
 	  <div class="carousel-inner">
 	    <div class="carousel-item active">
-	      <img src="<?php echo base_url()?>assets/img/sawah.png" class="card-img-top rounded-0">
+	      <img src="<?php echo base_url()?>assets/img/banner-1.png" class="card-img-top rounded-0">
 	      <div class="carousel-caption d-none d-md-block">
-		    <h5>Donasi</h5>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt!</p>
+		    <h5>Membantu Sesama</h5>
+		    <p>Ayo berdonasi, membantu mereka yang membutuhkan.</p>
 		  </div>
 	    </div>
 	    <div class="carousel-item">
-	      <img src="<?php echo base_url()?>assets/img/sawah.png" class="card-img-top rounded-0">
+	      <img src="<?php echo base_url()?>assets/img/banner-2.png" class="card-img-top rounded-0">
 	      <div class="carousel-caption d-none d-md-block">
 		    <h5>Donasi</h5>
 		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, cumque.</p>
 		  </div>
 	    </div>
 	    <div class="carousel-item">
-	      <img src="<?php echo base_url()?>assets/img/sawah.png" class="card-img-top rounded-0">
+	      <img src="<?php echo base_url()?>assets/img/banner-3.png" class="card-img-top rounded-0">
 	      <div class="carousel-caption d-none d-md-block">
 		    <h5>Donasi</h5>
 		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, mollitia.</p>
@@ -173,23 +173,17 @@
 	  <div class="footer-middle">
 	  <div class="container">
 	    <div class="row">
-	      <div class="col-md-3 offset-md-2 col-sm-6">
+	      <div class="col-md-4 col-sm-6">
 	        <!--Column1-->
 	        <div class="footer-pad">
 	          <h4>Alamat</h4>
 	          <address>
-				<ul class="list-unstyled">
-					<li>
-    					Jakal Km 14.5
-						<br>
-						Sleman<br>
-						Yogyakarta<br>
-					</li>
-				</ul>
+				Kampus Terpadu<br>Universitas Islam Indonesia<br>
+				Jl. Kaliurang KM 14.5 Sleman, DIY
 			</address>
 	        </div>
 	      </div>
-	      <div class="col-md-3 col-sm-6">
+	      <div class="col-md-4 col-sm-6">
 	        <!--Column1-->
 	        <div class="footer-pad">
 	          <h4>Layanan</h4>
@@ -201,7 +195,7 @@
 	          </ul>
 	        </div>
 	      </div>
-	      <div class="col-md-3 col-sm-6">
+	      <div class="col-md-4 col-sm-6">
 	        <!--Column1-->
 	        <div class="footer-pad">
 	          <h4>Kontak Developer</h4>

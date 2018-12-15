@@ -45,6 +45,8 @@ class User extends CI_Controller
 	{
 		$this->load->model('m_user');
 
+		$firstname		= $this->input->post('firstname');
+		$lastname 		= $this->input->post('lastname');
 		$username	= $this->input->post('username');
 		$password 	= $this->input->post('password');
 		$phone 		= $this->input->post('phone');
@@ -53,6 +55,7 @@ class User extends CI_Controller
 		$status 	= 'inactive';
 
 		$data 		= [
+					'name'		=> $firstname." ".$lastname,
 					'username'	=> $username,
 					'password'	=> md5($password),
 					'role' 		=> $role,
@@ -83,10 +86,10 @@ class User extends CI_Controller
 				redirect('disaster');
 			}
 			elseif($login->role == 'admin'){
-				$this->template_admin->show('admin/index');
+				redirect('admin');
 			}
 			elseif($login->role == 'petugas'){
-				$this->template_petugas->show('petugas/index');
+				redirect('petugas/index');
 			}
 		}
 		else
