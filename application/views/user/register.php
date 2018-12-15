@@ -10,7 +10,7 @@
 	
 	<!-- My Css -->
 	<link rel="stylesheet" href="<?php echo base_url()?>assets/libs/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<?php echo base_url()?>application/views/user/register.css">
+	<link rel="stylesheet" href="<?php echo base_url()?>assets/css/register.css">
 </head>
 <body>
 

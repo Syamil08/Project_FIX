@@ -11,7 +11,7 @@
 	
 	<!-- My Css -->
 	<link rel="stylesheet" href="<?php echo base_url()?>assets/libs/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<?php echo base_url()?>application/views/donatur/style.css">
+	<link rel="stylesheet" href="<?php echo base_url()?>assets/css/donatur.css">
 	<!-- Akhir My Css -->
 </head>
 <body>
