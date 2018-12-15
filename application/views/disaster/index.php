@@ -29,13 +29,13 @@
 		      <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
 		      <a class="nav-item nav-link" href="#">Donasi</a>
 		      <a class="nav-item nav-link" href="<?php echo site_url('disaster/about')?>">About</a>
-			<?php if ($this->session->userdata('logged_in')): ?>
+			<?php if (userdata()): ?>
 				<li class="nav-item dropdown no-arrow">
 		          <a href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-roggle">
 		            <i class="fa fa-user-circle fa-fw"></i>
 		          </a>
 		          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-		            <a href="#" class="dropdown-item"><?php echo $login->username?></a>
+		            <a href="#" class="dropdown-item"><?php echo userdata()->username?></a>
 		            <a href="#" class="dropdown-item">Dashboard</a>
 		            <div class="dropdown-divider"></div>
 		            <a href="<?php echo site_url('user/logout')?>" class="dropdown-item">Logout</a>
