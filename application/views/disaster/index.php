@@ -74,7 +74,7 @@
 		  </div>
 	    </div>
 	    <div class="carousel-item">
-	      <img src="<?php echo base_url()?>assets/img/sawah.png" class="card-img-top rounded-0">
+	      <img src="<?php echo base_url()?>assets/img/banner-3.png" class="card-img-top rounded-0">
 	      <div class="carousel-caption d-none d-md-block">
 		    <h5>Donasi</h5>
 		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, mollitia.</p>
@@ -169,23 +169,17 @@
 	  <div class="footer-middle">
 	  <div class="container">
 	    <div class="row">
-	      <div class="col-md-3 offset-md-2 col-sm-6">
+	      <div class="col-md-4 col-sm-6">
 	        <!--Column1-->
 	        <div class="footer-pad">
 	          <h4>Alamat</h4>
 	          <address>
-				<ul class="list-unstyled">
-					<li>
-    					Jakal Km 14.5
-						<br>
-						Sleman<br>
-						Yogyakarta<br>
-					</li>
-				</ul>
+				Kampus Terpadu<br>Universitas Islam Indonesia<br>
+				Jl. Kaliurang KM 14.5 Sleman, DIY
 			</address>
 	        </div>
 	      </div>
-	      <div class="col-md-3 col-sm-6">
+	      <div class="col-md-4 col-sm-6">
 	        <!--Column1-->
 	        <div class="footer-pad">
 	          <h4>Layanan</h4>
@@ -197,7 +191,7 @@
 	          </ul>
 	        </div>
 	      </div>
-	      <div class="col-md-3 col-sm-6">
+	      <div class="col-md-4 col-sm-6">
 	        <!--Column1-->
 	        <div class="footer-pad">
 	          <h4>Kontak Developer</h4>
