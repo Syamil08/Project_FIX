@@ -60,14 +60,14 @@
 	  </ol>
 	  <div class="carousel-inner">
 	    <div class="carousel-item active">
-	      <img src="<?php echo base_url()?>assets/img/sawah.png" class="card-img-top rounded-0">
+	      <img src="<?php echo base_url()?>assets/img/banner-1.png" class="card-img-top rounded-0">
 	      <div class="carousel-caption d-none d-md-block">
-		    <h5>Donasi</h5>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt!</p>
+		    <h5>Membantu Sesama</h5>
+		    <p>Ayo berdonasi, membantu mereka yang membutuhkan.</p>
 		  </div>
 	    </div>
 	    <div class="carousel-item">
-	      <img src="<?php echo base_url()?>assets/img/sawah.png" class="card-img-top rounded-0">
+	      <img src="<?php echo base_url()?>assets/img/banner-2.png" class="card-img-top rounded-0">
 	      <div class="carousel-caption d-none d-md-block">
 		    <h5>Donasi</h5>
 		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, cumque.</p>
