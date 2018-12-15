@@ -29,13 +29,13 @@
 		      <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
 		      <a class="nav-item nav-link" href="#">Donasi</a>
 		      <a class="nav-item nav-link" href="<?php echo site_url('disaster/about')?>">About</a>
-			<?php if ($this->session->userdata('logged_in')): ?>
+			<?php if (userdata()): ?>
 				<li class="nav-item dropdown no-arrow">
 		          <a href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-roggle">
 		            <i class="fa fa-user-circle fa-fw"></i>
 		          </a>
 		          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-		            <a href="#" class="dropdown-item"><?php echo $login->username?></a>
+		            <a href="#" class="dropdown-item"><?php echo userdata()->username?></a>
 		            <a href="<?php echo site_url('donatur/index')?>" class="dropdown-item">Dashboard</a>
 		            <div class="dropdown-divider"></div>
 		            <a href="<?php echo site_url('user/logout')?>" class="dropdown-item">Logout</a>
@@ -60,14 +60,14 @@
 	  </ol>
 	  <div class="carousel-inner">
 	    <div class="carousel-item active">
-	      <img src="<?php echo base_url()?>assets/img/sawah.png" class="card-img-top rounded-0">
+	      <img src="<?php echo base_url()?>assets/img/banner-1.png" class="card-img-top rounded-0">
 	      <div class="carousel-caption d-none d-md-block">
-		    <h5>Donasi</h5>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt!</p>
+		    <h5>Membantu Sesama</h5>
+		    <p>Ayo berdonasi, membantu mereka yang membutuhkan.</p>
 		  </div>
 	    </div>
 	    <div class="carousel-item">
-	      <img src="<?php echo base_url()?>assets/img/sawah.png" class="card-img-top rounded-0">
+	      <img src="<?php echo base_url()?>assets/img/banner-2.png" class="card-img-top rounded-0">
 	      <div class="carousel-caption d-none d-md-block">
 		    <h5>Donasi</h5>
 		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, cumque.</p>
