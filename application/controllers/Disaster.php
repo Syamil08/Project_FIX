@@ -16,6 +16,14 @@ class Disaster extends CI_Controller
 
 		$this->load->view('disaster/index',$data);
 	}
+
+	public function get_id()
+	{
+		$this->load->model('M_disaster');
+		$data['asal'] = $this->M_disaster->get_id($id);	
+
+      	$this->load->view('disaster/read',$data);
+	}
 	
 
 	public function about()

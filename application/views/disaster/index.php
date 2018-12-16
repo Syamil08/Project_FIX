@@ -102,7 +102,7 @@
 					<?php if (array_key_exists($i, $disaster)): ?>
 						<?php $d = $disaster[$i]?>
 						<div class="col-md-4">
-							<a href="<?php echo site_url('disaster/read')?>"">
+							<a href="<?php echo site_url('disaster/get_id')?>"">
 								<div class="card mb-4 shadow-sm">
 								<!-- <img class="card-img-top" src="<?php echo base_url().'assets/img/'.$d->file_name?>" alt="" height="300px"> -->
 								<img src="<?php echo base_url()?>assets/img/gunung.jpg" class="img-fluid">

@@ -1,4 +1,4 @@
-<?php 
+ <?php 
 
 
 class M_disaster extends CI_Model
@@ -13,6 +13,16 @@ class M_disaster extends CI_Model
 						->limit(7)
 						->get()
 						->result();
+	}
+
+	public function get_id($id)
+	{
+		 $this->db->select('disaster.*');
+   		 $this->db->from('disaster');
+   		 $this->db->where('disaster.id', $id); 
+    	 $query = $this->db->get();    
+   		 if($query->num_rows() > 0)
+         return $data->result($id);
 	}
 
 	public function insert($data)

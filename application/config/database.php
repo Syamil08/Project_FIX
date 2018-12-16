@@ -81,9 +81,6 @@ $db['default'] = array(
 	'password' => '',
 	'database' => 'tubes_fix',
 
-	'password' => 'tanpapassword',
-	'database' => 'tubes',
-
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

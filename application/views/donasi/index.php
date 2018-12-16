@@ -22,30 +22,16 @@
 
 
 		
-		<div class="container">
-			<h2><b>Rumah roboh, akibat Gunung Meletus</b></h2><br>
-			<dic class="row">
-				<div class="col-8" style="background-color: ">
-					<div class="card-img-top img-responsive" style="width: 100%;">
-						  <img src="<?php echo base_url()?>assets/images/gunung.jpg" alt="" class="img-responsive"><br><br>
-						  <h5><b>Rumah roboh, akibat Gunung Meletus</b></h5><br>
-
-						  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta perferendis, repellendus reprehenderit a ex labore nemo sunt mollitia quibusdam cupiditate atque officiis tempora, consectetur eligendi quia, molestias aspernatur quidem iste? Odit, inventore. Placeat sint, sit nesciunt deserunt! Fugit assumenda, minima velit voluptatibus est. Ut quasi, a iste suscipit perspiciatis quas!</p>
-			</div>
-				</div>
-
-				<div class="col-4" style="background-color: ">
-					<h3 class="text-center"><b>Bantuan Terkumpul</b></h3>
-					
-					<div class="col btn-warning text-center" style="padding:2%; background-color: #F1F3F4;" ><b>455 </b> Barang</div>
-
-					<br>
-					<?php echo anchor(site_url('donasi/doDonasi'),'Mulai Donasi', 'class="btn btn-primary"'); ?>
-
-
-				</div>
-			</dic>
-		</div>
+		<h2 style="margin-top:0px">Donate Read</h2>
+        <table class="table">
+	    <tr><td>User Id</td><td><?php echo $user_id; ?></td></tr>
+	    <tr><td>Name</td><td><?php echo $name; ?></td></tr>
+	    <tr><td>Qty</td><td><?php echo $qty; ?></td></tr>
+	    <tr><td>Address</td><td><?php echo $address; ?></td></tr>
+	    <tr><td>Status</td><td><?php echo $status; ?></td></tr>
+	    <tr><td>Disaster Id</td><td><?php echo $disaster_id; ?></td></tr>
+	    <tr><td></td><td><a href="<?php echo site_url('donasi') ?>" class="btn btn-default">Cancel</a></td></tr>
+	</table>
 			<br><br>
 		
 
